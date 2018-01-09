@@ -10,6 +10,7 @@ JPSlab is an automated Jamf Pro Server deployment, leveraging Vagrant to quickly
 - Automated Database Creation
 - Logging to the host machine
 - UAPI uploads to automatically insert a Jamf Pro license key and admin user creation
+- Works with vagrant-dplab
 
 ## Getting Started
 
@@ -18,5 +19,13 @@ JPSlab is an automated Jamf Pro Server deployment, leveraging Vagrant to quickly
 - Access to a Jamf Pro ROOT.war file and valid license key (including NFR keys)
 - Virtualbox or VMware Fusion
 - Vagrant
+
+### Instructions
+
+1. Clone this repository to your local Mac
+2. Amend the Vagrant base box location from the Vagrantfile to your preferred Vagrant Ubuntu box
+3. Edit the `jpslabSetup.sh` script, adding in the required variables as necessary
+3. Run `vagrant up` from within the working Vagrant folder
+4. By default, the JPS will be available on port 8080
 
 ## More to come...!
