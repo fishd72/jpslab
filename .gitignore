@@ -1,0 +1,7 @@
+.DS_Store
+*.pkg
+*.zip
+*.war
+vagrantBuild.log
+.vagrant/
+logs/
