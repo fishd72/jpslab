@@ -1,6 +1,6 @@
 # JPSlab (Jamf Pro Server Lab)
 
-JPSlab is an automated Jamf Pro Server deployment, leveraging Vagrant to quickly spin up a customised JSS.
+JPSlab is an automated Jamf Pro Server deployment, leveraging Vagrant to quickly spin up a customised JPS.
 
 ## Features
 
