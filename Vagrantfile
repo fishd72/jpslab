@@ -1,6 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "wegotoeleven/xenial64"
-  config.vm.box_url = 's3://wegotoeleven-vagrantboxes/xenial64.box'
+  config.vm.box = "bento/ubuntu-16.04"
   config.vm.hostname = "jpslab"
   config.vm.provider "vmware_fusion" do |vmware|
     vmware.vmx["memsize"] = "3072"
