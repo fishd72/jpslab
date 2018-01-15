@@ -36,6 +36,11 @@ writelog ()
 
 echoVariables ()
 {
+    if [[ -z "${mysqlRootPass}" || -z "${db}" || -z "${dbUser}" || -z "${dbPass}" || -z "${jpUser}" || -z "${jpPass}" || -z "${activationCode}" || -z "${institutionName}" ]]
+    then
+        writelog "One more or variables are empty. Please assign values to any missing variables and try again. Bailing..."
+        exit 1
+    fi
     writelog "Log Process is ${logProcess}"
     writelog "Log file is stored at ${logFile}"
     writelog "MySQL root password is ${mysqlRootPass}"
