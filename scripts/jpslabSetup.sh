@@ -72,7 +72,7 @@ installRequired ()
 
     # Install OpenJDK, Tomcat, Unzip and Avahi
     writelog "Installing Open Java JDK and Tomcat 8..."
-    apt install -y openjdk-8-jdk tomcat8 unzip avahi-daemon >> "${logFile}" 2>&1
+    apt install -y openjdk-11-jdk tomcat8 unzip avahi-daemon >> "${logFile}" 2>&1
 
     # copy Java memory settings script to tomcat8
     cat << EOF > "/usr/share/tomcat8/bin/setenv.sh"
