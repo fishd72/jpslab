@@ -120,6 +120,7 @@ installJamfProWebApp ()
 
     # Start Tomcat
     service tomcat8 start
+    /bin/sleep 90 #Wait for Tomcat to start before proceeding.
 }
 
 configureJamfProServer ()
