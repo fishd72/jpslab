@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-16.04"
+  config.vm.box = "bento/ubuntu-18.04"
   config.vm.hostname = "jpslab"
   config.vm.provider "vmware_fusion" do |vmware|
     vmware.vmx["memsize"] = "3072"
@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
     vb.gui = false
   end
   config.vm.network :forwarded_port, guest: 8080, host: 8080, auto_correct: true
+  config.vm.network :forwarded_port, guest: 8443, host: 8443, auto_correct: true
   config.vm.provision :shell, :path => "scripts/jpslabSetup.sh"
   config.ssh.forward_agent = true
 end
